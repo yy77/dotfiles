@@ -1,0 +1,6 @@
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+noremap h gT
+noremap l gt
+noremap j <C-d>
+noremap k <C-u>
+:autocmd LocationChange .* js modes.passAllKeys = /(mail|plus|drive)\.google\.com/.test(buffer.URL)
